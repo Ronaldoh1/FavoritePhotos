@@ -19,6 +19,11 @@
 		F2347F841AC9342200308659 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2347F831AC9342200308659 /* MapKit.framework */; };
 		F2347F861AC9342A00308659 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2347F851AC9342A00308659 /* CoreLocation.framework */; };
 		F2347F8C1AC93DCC00308659 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F2347F8B1AC93DCC00308659 /* map.png */; };
+		F2347F901AC9454B00308659 /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F8F1AC9454B00308659 /* MapViewViewController.m */; };
+		F2347F931AC9466600308659 /* CustomMKPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F921AC9466600308659 /* CustomMKPointAnnotation.m */; };
+		F2347F961AC946EA00308659 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F951AC946EA00308659 /* CustomCollectionViewCell.m */; };
+		F2347F991AC9488F00308659 /* InstagramDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F981AC9488F00308659 /* InstagramDataDownloader.m */; };
+		F2347F9C1AC949B000308659 /* IGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F9B1AC949B000308659 /* IGImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,16 @@
 		F2347F831AC9342200308659 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F2347F851AC9342A00308659 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F2347F8B1AC93DCC00308659 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		F2347F8E1AC9454B00308659 /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
+		F2347F8F1AC9454B00308659 /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
+		F2347F911AC9466600308659 /* CustomMKPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomMKPointAnnotation.h; path = ../CustomMKPointAnnotation.h; sourceTree = "<group>"; };
+		F2347F921AC9466600308659 /* CustomMKPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomMKPointAnnotation.m; path = ../CustomMKPointAnnotation.m; sourceTree = "<group>"; };
+		F2347F941AC946EA00308659 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCollectionViewCell.h; path = ../CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		F2347F951AC946EA00308659 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCollectionViewCell.m; path = ../CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		F2347F971AC9488F00308659 /* InstagramDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramDataDownloader.h; sourceTree = "<group>"; };
+		F2347F981AC9488F00308659 /* InstagramDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramDataDownloader.m; sourceTree = "<group>"; };
+		F2347F9A1AC949B000308659 /* IGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGImage.h; sourceTree = "<group>"; };
+		F2347F9B1AC949B000308659 /* IGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +112,16 @@
 				F2347F551AC9300600308659 /* AppDelegate.m */,
 				F2347F571AC9300600308659 /* RootViewController.h */,
 				F2347F581AC9300600308659 /* RootViewController.m */,
+				F2347F971AC9488F00308659 /* InstagramDataDownloader.h */,
+				F2347F981AC9488F00308659 /* InstagramDataDownloader.m */,
+				F2347F9A1AC949B000308659 /* IGImage.h */,
+				F2347F9B1AC949B000308659 /* IGImage.m */,
+				F2347F8E1AC9454B00308659 /* MapViewViewController.h */,
+				F2347F8F1AC9454B00308659 /* MapViewViewController.m */,
+				F2347F911AC9466600308659 /* CustomMKPointAnnotation.h */,
+				F2347F921AC9466600308659 /* CustomMKPointAnnotation.m */,
+				F2347F941AC946EA00308659 /* CustomCollectionViewCell.h */,
+				F2347F951AC946EA00308659 /* CustomCollectionViewCell.m */,
 				F2347F5A1AC9300600308659 /* Main.storyboard */,
 				F2347F5D1AC9300600308659 /* Images.xcassets */,
 				F2347F5F1AC9300600308659 /* LaunchScreen.xib */,
@@ -259,8 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2347F591AC9300600308659 /* RootViewController.m in Sources */,
+				F2347F931AC9466600308659 /* CustomMKPointAnnotation.m in Sources */,
 				F2347F561AC9300600308659 /* AppDelegate.m in Sources */,
+				F2347F961AC946EA00308659 /* CustomCollectionViewCell.m in Sources */,
+				F2347F991AC9488F00308659 /* InstagramDataDownloader.m in Sources */,
+				F2347F901AC9454B00308659 /* MapViewViewController.m in Sources */,
 				F2347F531AC9300600308659 /* main.m in Sources */,
+				F2347F9C1AC949B000308659 /* IGImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
