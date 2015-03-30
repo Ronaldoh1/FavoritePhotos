@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		F2347F531AC9300600308659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F521AC9300600308659 /* main.m */; };
 		F2347F561AC9300600308659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F551AC9300600308659 /* AppDelegate.m */; };
-		F2347F591AC9300600308659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F581AC9300600308659 /* ViewController.m */; };
+		F2347F591AC9300600308659 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F581AC9300600308659 /* RootViewController.m */; };
 		F2347F5C1AC9300600308659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2347F5A1AC9300600308659 /* Main.storyboard */; };
 		F2347F5E1AC9300600308659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2347F5D1AC9300600308659 /* Images.xcassets */; };
 		F2347F611AC9300600308659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2347F5F1AC9300600308659 /* LaunchScreen.xib */; };
 		F2347F6D1AC9300600308659 /* FavoritePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F6C1AC9300600308659 /* FavoritePhotosTests.m */; };
+		F2347F7F1AC932B300308659 /* photos-icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = F2347F7E1AC932B300308659 /* photos-icon120.png */; };
+		F2347F811AC9339A00308659 /* aerial05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2347F801AC9339A00308659 /* aerial05.jpg */; };
+		F2347F841AC9342200308659 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2347F831AC9342200308659 /* MapKit.framework */; };
+		F2347F861AC9342A00308659 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2347F851AC9342A00308659 /* CoreLocation.framework */; };
+		F2347F8C1AC93DCC00308659 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F2347F8B1AC93DCC00308659 /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,19 @@
 		F2347F521AC9300600308659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2347F541AC9300600308659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2347F551AC9300600308659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2347F571AC9300600308659 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2347F581AC9300600308659 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2347F571AC9300600308659 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F2347F581AC9300600308659 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F2347F5B1AC9300600308659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2347F5D1AC9300600308659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2347F601AC9300600308659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F2347F661AC9300600308659 /* FavoritePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2347F6B1AC9300600308659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2347F6C1AC9300600308659 /* FavoritePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosTests.m; sourceTree = "<group>"; };
+		F2347F7E1AC932B300308659 /* photos-icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photos-icon120.png"; path = "FavoritePhotos/photos-icon120.png"; sourceTree = "<group>"; };
+		F2347F801AC9339A00308659 /* aerial05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = aerial05.jpg; path = FavoritePhotos/aerial05.jpg; sourceTree = "<group>"; };
+		F2347F831AC9342200308659 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F2347F851AC9342A00308659 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F2347F8B1AC93DCC00308659 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2347F861AC9342A00308659 /* CoreLocation.framework in Frameworks */,
+				F2347F841AC9342200308659 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +95,13 @@
 			children = (
 				F2347F541AC9300600308659 /* AppDelegate.h */,
 				F2347F551AC9300600308659 /* AppDelegate.m */,
-				F2347F571AC9300600308659 /* ViewController.h */,
-				F2347F581AC9300600308659 /* ViewController.m */,
+				F2347F571AC9300600308659 /* RootViewController.h */,
+				F2347F581AC9300600308659 /* RootViewController.m */,
 				F2347F5A1AC9300600308659 /* Main.storyboard */,
 				F2347F5D1AC9300600308659 /* Images.xcassets */,
 				F2347F5F1AC9300600308659 /* LaunchScreen.xib */,
+				F2347F8D1AC9405B00308659 /* Frameworks */,
+				F2347F821AC9340900308659 /* Images */,
 				F2347F501AC9300600308659 /* Supporting Files */,
 			);
 			path = FavoritePhotos;
@@ -117,6 +131,27 @@
 				F2347F6B1AC9300600308659 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2347F821AC9340900308659 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2347F7E1AC932B300308659 /* photos-icon120.png */,
+				F2347F8B1AC93DCC00308659 /* map.png */,
+				F2347F801AC9339A00308659 /* aerial05.jpg */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F2347F8D1AC9405B00308659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2347F831AC9342200308659 /* MapKit.framework */,
+				F2347F851AC9342A00308659 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +203,7 @@
 				TargetAttributes = {
 					F2347F4C1AC9300600308659 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = A37GTC4NZF;
 					};
 					F2347F651AC9300600308659 = {
 						CreatedOnToolsVersion = 6.2;
@@ -199,9 +235,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2347F8C1AC93DCC00308659 /* map.png in Resources */,
 				F2347F5C1AC9300600308659 /* Main.storyboard in Resources */,
 				F2347F611AC9300600308659 /* LaunchScreen.xib in Resources */,
 				F2347F5E1AC9300600308659 /* Images.xcassets in Resources */,
+				F2347F811AC9339A00308659 /* aerial05.jpg in Resources */,
+				F2347F7F1AC932B300308659 /* photos-icon120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2347F591AC9300600308659 /* ViewController.m in Sources */,
+				F2347F591AC9300600308659 /* RootViewController.m in Sources */,
 				F2347F561AC9300600308659 /* AppDelegate.m in Sources */,
 				F2347F531AC9300600308659 /* main.m in Sources */,
 			);
@@ -343,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FavoritePhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FavoritePhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

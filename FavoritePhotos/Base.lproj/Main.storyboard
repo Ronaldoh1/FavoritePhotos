@@ -1,25 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vbw-jS-rqm">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="wTd-zW-0Fe">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="WMa-B9-oZV" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="ide-Id-eYg"/>
+                        <viewControllerLayoutGuide type="bottom" id="JFy-Cz-oo7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="xe1-6l-lLn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="fqY-UD-472"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ao-gY-SUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1347" y="295"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xY3-cM-oxD">
+            <objects>
+                <viewController id="Cek-dH-qcP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zXx-GU-wbU"/>
+                        <viewControllerLayoutGuide type="bottom" id="SgZ-0P-xKI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cPC-WR-r35">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Xs-Q0-Roa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SgZ-0P-xKI" firstAttribute="top" secondItem="0Xs-Q0-Roa" secondAttribute="bottom" id="Bxi-Qy-MWI"/>
+                            <constraint firstItem="0Xs-Q0-Roa" firstAttribute="top" secondItem="cPC-WR-r35" secondAttribute="topMargin" id="Psc-Ej-LHh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Xs-Q0-Roa" secondAttribute="trailing" constant="-16" id="aJA-bX-DnC"/>
+                            <constraint firstItem="0Xs-Q0-Roa" firstAttribute="leading" secondItem="cPC-WR-r35" secondAttribute="leadingMargin" constant="-16" id="uIc-9u-yYt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="map.png" id="Sr4-Zc-znZ">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH3-PB-I4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="1242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hRL-T3-37k">
+            <objects>
+                <viewController id="gca-Qo-zTT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="puH-TT-Gwp"/>
+                        <viewControllerLayoutGuide type="bottom" id="tW7-ND-aoE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aId-gg-rqc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="JVG-oz-40w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmG-Ey-Tjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="-522"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1fd-yp-5Mb">
+            <objects>
+                <tabBarController id="Vbw-jS-rqm" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="suB-PJ-LVD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gca-Qo-zTT" kind="relationship" relationship="viewControllers" id="j5h-nB-OZ7"/>
+                        <segue destination="WMa-B9-oZV" kind="relationship" relationship="viewControllers" id="6wf-5n-5aC"/>
+                        <segue destination="Cek-dH-qcP" kind="relationship" relationship="viewControllers" id="wg5-19-ZP8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfP-u0-mVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="-36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map.png" width="32" height="32"/>
+    </resources>
 </document>
