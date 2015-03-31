@@ -24,6 +24,8 @@
 		F2347F961AC946EA00308659 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F951AC946EA00308659 /* CustomCollectionViewCell.m */; };
 		F2347F991AC9488F00308659 /* InstagramDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F981AC9488F00308659 /* InstagramDataDownloader.m */; };
 		F2347F9C1AC949B000308659 /* IGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F9B1AC949B000308659 /* IGImage.m */; };
+		F2347F9F1AC9940800308659 /* FavoriteImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2347F9E1AC9940800308659 /* FavoriteImagesViewController.m */; };
+		F2C5E41B1ACA455F0094705A /* igpictures.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2C5E41A1ACA455F0094705A /* igpictures.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		F2347F981AC9488F00308659 /* InstagramDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramDataDownloader.m; sourceTree = "<group>"; };
 		F2347F9A1AC949B000308659 /* IGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGImage.h; sourceTree = "<group>"; };
 		F2347F9B1AC949B000308659 /* IGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGImage.m; sourceTree = "<group>"; };
+		F2347F9D1AC9940800308659 /* FavoriteImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteImagesViewController.h; sourceTree = "<group>"; };
+		F2347F9E1AC9940800308659 /* FavoriteImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteImagesViewController.m; sourceTree = "<group>"; };
+		F2C5E41A1ACA455F0094705A /* igpictures.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = igpictures.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,8 @@
 				F2347F551AC9300600308659 /* AppDelegate.m */,
 				F2347F571AC9300600308659 /* RootViewController.h */,
 				F2347F581AC9300600308659 /* RootViewController.m */,
+				F2347F9D1AC9940800308659 /* FavoriteImagesViewController.h */,
+				F2347F9E1AC9940800308659 /* FavoriteImagesViewController.m */,
 				F2347F971AC9488F00308659 /* InstagramDataDownloader.h */,
 				F2347F981AC9488F00308659 /* InstagramDataDownloader.m */,
 				F2347F9A1AC949B000308659 /* IGImage.h */,
@@ -161,6 +168,7 @@
 		F2347F821AC9340900308659 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2C5E41A1ACA455F0094705A /* igpictures.jpg */,
 				F2347F7E1AC932B300308659 /* photos-icon120.png */,
 				F2347F8B1AC93DCC00308659 /* map.png */,
 				F2347F801AC9339A00308659 /* aerial05.jpg */,
@@ -264,6 +272,7 @@
 				F2347F5C1AC9300600308659 /* Main.storyboard in Resources */,
 				F2347F611AC9300600308659 /* LaunchScreen.xib in Resources */,
 				F2347F5E1AC9300600308659 /* Images.xcassets in Resources */,
+				F2C5E41B1ACA455F0094705A /* igpictures.jpg in Resources */,
 				F2347F811AC9339A00308659 /* aerial05.jpg in Resources */,
 				F2347F7F1AC932B300308659 /* photos-icon120.png in Resources */,
 			);
@@ -291,6 +300,7 @@
 				F2347F901AC9454B00308659 /* MapViewViewController.m in Sources */,
 				F2347F531AC9300600308659 /* main.m in Sources */,
 				F2347F9C1AC949B000308659 /* IGImage.m in Sources */,
+				F2347F9F1AC9940800308659 /* FavoriteImagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +493,7 @@
 				F2347F721AC9300600308659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2347F731AC9300600308659 /* Build configuration list for PBXNativeTarget "FavoritePhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +502,7 @@
 				F2347F751AC9300600308659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

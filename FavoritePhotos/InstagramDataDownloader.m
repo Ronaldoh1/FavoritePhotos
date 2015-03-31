@@ -13,8 +13,10 @@
 //pull the IGImages information - need to store in an aray - then notify and provide the ParentVC with the images.
 
 -(void)pullImagesFromIGAPI{
+
+    NSString *tempURLStr = [NSString stringWithFormat:@"https://api.instagram.com/v1/tags/%@/media/recent?access_token=18177908.1fb234f.7b96c1e301b74ec8bffcf3550a2fde49", self.searchTag];
     //Step 1. Create the URL
-    NSURL *url = [NSURL URLWithString:@"https://api.instagram.com//v1/tags/soccer/media/recent?access_token=18177908.1fb234f.7b96c1e301b74ec8bffcf3550a2fde49"];
+    NSURL *url = [NSURL URLWithString:tempURLStr];
     //Step 2. Create a request.
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 

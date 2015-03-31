@@ -18,6 +18,7 @@
 @interface InstagramDataDownloader : NSObject
 
 @property id<InstagramDataDownloaderDelegate>parentVC;
+@property NSString *searchTag;
 
 -(void)pullImagesFromIGAPI;
 

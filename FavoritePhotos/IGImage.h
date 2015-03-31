@@ -15,6 +15,7 @@
 @property UIImage *imageToDisplay;
 @property double latitude;
 @property double longitude;
+@property BOOL isFavorited;
 
 -(instancetype)initWithMediaDictionary:(NSDictionary *)dictionary;
 
