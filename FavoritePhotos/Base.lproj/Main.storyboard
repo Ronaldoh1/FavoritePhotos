@@ -160,6 +160,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Where were photos takes? " id="Yrb-KB-6Rz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="0Xs-Q0-Roa" id="vAt-cv-dgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aH3-PB-I4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

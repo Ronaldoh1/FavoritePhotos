@@ -10,6 +10,7 @@
 #import "IGImage.h"
 #import "InstagramDataDownloader.h"
 #import "CustomCollectionViewCell.h"
+#import <MapKit/MapKit.h>
 
 
 @interface RootViewController ()<InstagramDataDownloaderDelegate, UITabBarDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UITabBarControllerDelegate,UIGestureRecognizerDelegate>
@@ -23,6 +24,9 @@
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGestureRecognizer;
 
 @property NSMutableArray *favoritePhotosArray;
+
+@property CLLocationManager *locationManager;
+@property CLLocation *currentLocation;
 
 @end
 
@@ -54,10 +58,32 @@
     self.favoritePhotosArray = [NSMutableArray new];
 
 
+    //call helper method to update user's current location.
+    [self UpdateUserCurrentLocation];
+
+
 
 
 
 }
+
+
+//--Helper method to update the current location--//
+-(void)UpdateUserCurrentLocation{
+    [self.locationManager requestAlwaysAuthorization];
+    [self.locationManager startUpdatingLocation];
+
+}
+#pragma Mark CLLocationManager-Delegate Methods
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+
+    self.currentLocation = locations.firstObject;
+    NSLog(@"%@",self.currentLocation);
+    [self.locationManager stopUpdatingLocation];
+}
+
+
 //Helper method for tap selector. This is where the like of each picture is set up.
 -(void) tappedResponder:(UITapGestureRecognizer *)sender{
 
@@ -120,6 +146,9 @@
     //2. we need to set the number of fingers
     self.tapGestureRecognizer.numberOfTouchesRequired = 1;
 }
+
+
+//--DOWNLOADER DELEGATE METHOD IMPLEMENTATION--//
 //this is the method that will allow us to access the array of images from the downloader class.
 
 
@@ -184,6 +213,7 @@
 
     return cell;
 }
+
 #pragma mark -- UI SEARCHBAR DELEGATE
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
@@ -210,6 +240,13 @@
     
     self.activityIndicator.hidesWhenStopped = true;
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+}
+
+
 
 
 

@@ -9,7 +9,9 @@
 #import "MapViewViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface MapViewViewController ()<MKMapViewDelegate>
+@interface MapViewViewController ()<MKMapViewDelegate, CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 
 @end
 
@@ -17,8 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
+
+    //show user's current location.
+    self.mapView.showsUserLocation = true;
+
+
+}
 
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "IGImage.h"
 
 @interface MapViewViewController : UIViewController
+@property  IGImage *bikeStation;
+@property CLLocation *currentLocation;
 
 @end
